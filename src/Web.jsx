@@ -2,11 +2,11 @@ import React from 'react';
 import { withStyles } from '@material-ui/core/styles';
 import PropTypes from 'prop-types';
 import Header from './Header/_Main'
+import BestFoods from './BestFoods/_Main'
 
 const styles ={
     root: {
         width: '100%',
-        height: '100%',
         position: 'relative',
         display: 'flex',
         flexDirection: 'column',
@@ -31,6 +31,7 @@ class Web extends React.Component {
         return (
             <div className={classes.root}>
                 <Header/>
+                <BestFoods/>
             </div>
         )
     }
