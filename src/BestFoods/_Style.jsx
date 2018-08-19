@@ -73,8 +73,9 @@ export const style = (theme) => {
             whiteSpace: 'pre-line',
             marginBottom: '1.5em'
         },
-        grid_list: {
-            width: '100%'
+        grid: {
+            display: 'flex',
+            flexDirection:'row',
         }
     })
 }
