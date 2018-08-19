@@ -45,19 +45,27 @@ const style = (theme) => {
 
 class FoodBlock extends React.Component {
     render () {
-        const {classes} = this.props;
+        const {classes, block_1, block_2} = this.props;
         return (
             <Grid container className={classes.root}>
-            <Grid item className={classes.block} 
-                 style={{display: 'flex', flexDirection: 'row-reverse'}}>
-               <CardMedia className={classes.image} image={this.props.image_1}/>
-               <div className={classes.desc}/>
-            </Grid>
-            <Grid item  className={classes.block} 
-                style={{display: 'flex', flexDirection: 'row'}}>
-               <CardMedia className={classes.image} image={this.props.image_2}/>
-               <div className={classes.desc}/>
-            </Grid>
+                <Grid item className={classes.block}
+                    style={{ display: 'flex', flexDirection: 'row' }}>
+                    <CardMedia className={classes.image} image={block_1.img_1} />
+                    <div className={classes.desc}>
+                        <Typography>{block_1.title_1}</Typography>
+                        <Typography>{block_1.subtitle_1}</Typography>
+                        <Typography>{block_1.content_1}</Typography>
+                    </div>
+                </Grid>
+                <Grid item className={classes.block}
+                    style={{ display: 'flex', flexDirection: 'row-reverse' }}>
+                    <CardMedia className={classes.image} image={block_2.img_2} />
+                    <div className={classes.desc}>
+                        <Typography>{block_2.title_2}</Typography>
+                        <Typography>{block_2.subtitle_2}</Typography>
+                        <Typography>{block_2.content_2}</Typography>
+                    </div>
+                </Grid>
             </Grid>
         )
     }
