@@ -20,10 +20,10 @@ class BestFoods extends React.Component {
                     'content_1': 'Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean'
                 },
                 block_2: {
-                    'img_2': Dish_2,
+                    'img_2': Dish_3,
                     'title_2': 'FOOD',
                     'subtitle_2': 'CHICKEN CHIMICHURRI CROQUETTES',
-                    'content_2': 'Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language oceanEven the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life.'
+                    'content_2': 'Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language oceanEven the all-powerful Pointing has no control about the blind texts.'
                 },
             },
             {
@@ -34,10 +34,10 @@ class BestFoods extends React.Component {
                     'content_1': 'Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean'
                 },
                 block_2: {
-                    'img_2': Dish_3,
+                    'img_2': Dish_1,
                     'title_2': 'VEGIES',
                     'subtitle_2': 'BUTTERMILK CHICKEN JIBARITOS',
-                    'content_2': 'Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language oceanA small river named Duden flows by their place and supplies it with the necessary regelialia.'
+                    'content_2': 'Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language oceanA small river named Duden.'
                 },
             },
         ]
