@@ -79,7 +79,7 @@ export const style = (theme) => {
             },
         },
         subtitle: {
-            fontFamily: 'Muli, sans-serif',
+            fontFamily: 'Quicksand, sans-serif',
             fontSize: 26,
             lineHeight: '180%',
             color: 'white',
@@ -87,7 +87,7 @@ export const style = (theme) => {
             marginBottom: '1.5em'
         },
         button: {
-            fontFamily: 'Muli, sans-serif',
+            fontFamily: 'Quicksand, sans-serif',
             fontSize: 14,
             fontWeight: 700,
             lineHeight: '180%',

@@ -31,8 +31,7 @@ const style = (theme) => {
             },
             display: 'flex',
             flexDirection: 'column',
-            fontFamily: 'Quicksand, sans-serif',
-            // fontFamily: ', sans-serif',
+            fontFamily: 'Muli, sans-serif',
         },
         block: {
             width: '100%',
@@ -49,6 +48,7 @@ const style = (theme) => {
         image: {
             width: '50%',
             height: '100%',
+            opacity: 0.5
         },
         title: {
             fontFamily: 'Playfair Display, serif',
@@ -70,7 +70,6 @@ const style = (theme) => {
             },
         },
         content: {
-            fontFamily: 'Quicksand, sans-serif',
             // fontSize: 14,
             color: 'grey',
             [theme.breakpoints.up('md')]: {

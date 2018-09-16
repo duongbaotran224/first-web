@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700&subset=vietnamese');
 @import url('https://fonts.googleapis.com/css?family=Muli:400,600,700&subset=vietnamese');
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700&amp;subset=vietnamese');
 
 body {
   margin: 0;
@@ -8,7 +9,8 @@ body {
   overflow-y: hidden;
   width: 100%;
   /* height: 100%; */
-  font-family: 'Muli', 'sans-serif';
+  /* font-family: 'Muli', 'sans-serif'; */
+  font-family: 'Quicksand', 'sans-serif';
 }
 #root{
   position: absolute;

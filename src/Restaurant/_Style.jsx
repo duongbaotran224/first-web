@@ -1,10 +1,11 @@
 
+import Color from '../RandomColor'
+
 export const style = (theme) => {
     return ({
         root: {
             position: 'relative',
             padding: '7em 0',
-            backgroundColor: '#f8f9fa',
             border: 'none',
             boxShadow: 'none'
         },
@@ -34,7 +35,7 @@ export const style = (theme) => {
         },
         wrap_title: {
             position: 'relative',
-            width: '100%',
+            width: '65%',
             height: 'auto',
             boxSizing: 'border-box',
             marginBottom: '3rem',
@@ -49,8 +50,9 @@ export const style = (theme) => {
             fontWeight: 500,
             lineHeight: '120%',
             color: 'black',
-            whiteSpace: 'pre-wrap',
-            marginBottom: '0.5em',
+            // whiteSpace: 'pre-wrap',
+            marginBottom: '0.7em',
+            textAlign: 'left',
             [theme.breakpoints.up('lg')]: {
                 fontSize: 50,
             },
@@ -68,16 +70,39 @@ export const style = (theme) => {
             },
         },
         subtitle: {
-            fontFamily: 'Muli, sans-serif',
+            fontFamily: 'Quicksand, sans-serif',
             fontSize: 20,
             lineHeight: '180%',
             color: 'grey',
             whiteSpace: 'pre-line',
-            marginBottom: '1.5em'
+            marginBottom: '1.5em',
+            textAlign: 'left'
         },
         grid: {
-            display: 'flex',
-            flexDirection:'row',
+            height: 500,
+            width: '100%',
+            // backgroundColor: 'yellowgreen',
+            // margin: 'auto'
+        },
+        col_0: {
+            flexGrow: 1,
+            backgroundColor: Color()
+        },
+        col_1: {
+            flexGrow: 1,
+            backgroundColor: Color()
+        },
+        col_2: {
+            flexGrow: 1,
+            backgroundColor: Color()
+        },
+        col_3: {
+            flexGrow: 1,
+            backgroundColor: Color()
+        },
+        col_4: {
+            flexGrow: 1,
+            backgroundColor: Color()
         }
     })
 }
