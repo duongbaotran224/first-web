@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import Header from './Header/_Main'
 import BestFoods from './BestFoods/_Main'
 import Restaurant from './Restaurant/_Main'
+import Team from './Team/_Main'
 
 const styles ={
     root: {
@@ -34,6 +35,7 @@ class Web extends React.Component {
                 <Header/>
                 <BestFoods/>
                 <Restaurant/>
+                <Team/>
             </div>
         )
     }
