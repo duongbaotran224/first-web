@@ -1,6 +1,4 @@
 
-import Color from '../RandomColor'
-
 export const style = (theme) => {
     return ({
         root: {
@@ -70,8 +68,32 @@ export const style = (theme) => {
             boxSizing: 'border-box',
             margin: '2em auto',
         },
+        name: {
+            fontFamily: 'Playfair Display, serif',
+            fontSize: 30,
+            boxSizing: 'border-box',
+            marginBottom: 10
+        },
+        position: {
+            fontFamily: 'Quicksand, sans-serif',
+            fontSize: 20,
+            fontWeight: 300,
+            boxSizing: 'border-box',
+            marginBottom: 20,
+            letterSpacing: '0.1em',
+            textTransform: 'uppercase',
+            color: '#b3b3b3'
+        },
+        desc: {
+            fontFamily: 'Quicksand, sans-serif',
+            fontSize: 20,
+            fontWeight: 300,
+            boxSizing: 'border-box',
+            marginBottom: '1em',
+            color: 'grey'
+        },
         button: {
-            color: 'red',
+            color: '#ff7a5c',
             width: '1.5em',
             height: '1.5em',
             margin: 'auto',

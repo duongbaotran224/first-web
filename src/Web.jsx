@@ -5,6 +5,7 @@ import Header from './Header/_Main'
 import BestFoods from './BestFoods/_Main'
 import Restaurant from './Restaurant/_Main'
 import Team from './Team/_Main'
+import Menu from './Menu/_Main'
 
 const styles ={
     root: {
@@ -13,7 +14,7 @@ const styles ={
         display: 'flex',
         flexDirection: 'column',
         // animationName: 'fading',
-        // animationDuration: '4s' 
+        // animationDuration: '4s'
     },
     // '@keyframe fading': {
     //     from: {
@@ -36,6 +37,7 @@ class Web extends React.Component {
                 <BestFoods/>
                 <Restaurant/>
                 <Team/>
+                <Menu/>
             </div>
         )
     }

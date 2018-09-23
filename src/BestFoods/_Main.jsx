@@ -1,7 +1,7 @@
 import React from 'react';
 import {withStyles} from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
-import PropTypes from 'prop-types'; 
+import PropTypes from 'prop-types';
 import style from './_Style.jsx';
 import Typography from '@material-ui/core/Typography';
 import FoodBlock from './__FoodBlock'
@@ -41,7 +41,7 @@ class BestFoods extends React.Component {
                 },
             },
         ]
-        
+
     render () {
         const {classes} = this.props;
 
@@ -59,12 +59,12 @@ class BestFoods extends React.Component {
                     <Grid container className={classes.grid}>
                         {this.data.map((item, index) => {
                         return (<Grid key={index} item lg={6} xs={12}>
-                            <FoodBlock 
-                                        block_1={item.block_1} 
+                            <FoodBlock
+                                        block_1={item.block_1}
                                         block_2={item.block_2} />
                         </Grid>)
                         })}
-                    </Grid> 
+                    </Grid>
                 </div>
             </Paper>
         )

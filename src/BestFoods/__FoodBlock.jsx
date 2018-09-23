@@ -1,14 +1,10 @@
 import React from 'react';
 import {withStyles} from '@material-ui/core/styles';
-import Paper from '@material-ui/core/Paper';
-import PropTypes from 'prop-types'; 
+import PropTypes from 'prop-types';
 import Typography from '@material-ui/core/Typography';
 import CardMedia from '@material-ui/core/CardMedia';
 import Grid from '@material-ui/core/Grid'
 import Button from '@material-ui/core/Button';
-import ArrowIcon from '../../src/Images/right-mob.svg'
-
-const arrow = e => <ArrowIcon {...e}/>
 
 const style = (theme) => {
     return({
@@ -86,10 +82,10 @@ const style = (theme) => {
                 marginBottom: '3rem',
             },
             [theme.breakpoints.down('xs')]: {
-                display: 'none !important'  
+                display: 'none !important'
             },
             [theme.breakpoints.down('380')]: {
-                display: 'none !important'  
+                display: 'none !important'
             },
         },
         layer_hover: {
@@ -132,8 +128,8 @@ class FoodBlock extends React.Component {
                         <Typography className={classes.subtitle}>{block_1.subtitle_1}</Typography>
                         <Typography className={classes.content}>{block_1.content_1}</Typography>
                         <div className={classes.layer_hover}>
-                            <Button className={classes.button}>{'LEARN MORE'}
-                            {arrow}
+                            <Button className={classes.button}>
+                              {'LEARN MORE'}
                             </Button>
                         </div>
                     </div>
