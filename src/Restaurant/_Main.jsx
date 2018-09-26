@@ -56,9 +56,9 @@ class Restaurant extends React.Component {
               <span>Separated they live in Bookmarksgrove right at
                 the coast of the Semantics,
                 a large language ocean.</span>
-              <p>It is a paradisematic country, in which
-                roasted parts of sentences fly into your mouth</p>
             </Typography>
+            <Typography className={classes.subtitle}>It is a paradisematic country, in which
+              roasted parts of sentences fly into your mouth</Typography>
           </div>
         </div>
         <Grid container spacing={16} className={classes.grid}>

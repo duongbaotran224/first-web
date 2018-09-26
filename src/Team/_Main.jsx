@@ -62,7 +62,7 @@ const GridList = (props) => {
 class Team extends React.Component {
 
   render() {
-    console.log("ppp", this.props)
+    // console.log("ppp", this.props)
     const {classes} = this.props;
 
     return (<div className={classes.root}>

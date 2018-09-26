@@ -1,7 +1,6 @@
 import React from 'react';
 import {withStyles} from '@material-ui/core/styles';
 import PropTypes from 'prop-types';
-import Typography from '@material-ui/core/Typography';
 import {Tabs, Tab} from '@material-ui/core'
 import FoodItem from './_FoodItem'
 import {DATA} from './_Data'
@@ -14,26 +13,48 @@ const style = (theme) => {
       padding: '0px 15px',
       margin: '3em auto'
     },
+    tabsRoot: {
+      boxSizing: 'border-box',
+      marginBottom: 80,
+      display: 'flex',
+      flexDirection: 'row',
+      alignItems: 'center',
+      justifyContent: 'center',
+    },
+    tabRoot: {
+      '&:hover': {
+        color: '#ff7a5c',
+        opacity: 1,
+        backgroundColor: 'none'
+      },
+      '&$tabSelected': {
+        color: '#ff7a5c',
+        fontWeight: 500,
+      },
+      '&:focus': {
+        color: '#ff7a5c',
+      },
+    },
+    tabsIndicator: {
+      backgroundColor: '#ff7a5c'
+    },
+    tabSelected: {}
   })
 }
 
 const NaviTab = (props) => {
   const {classes, value, handleChange} = props
+  // console.log(props)
   return (
     <Tabs value={value}
           onChange={handleChange}
-          style={{
-            boxSizing: 'border-box',
-            marginBottom: 80,
-            display: 'flex',
-            flexDirection: 'row',
-            alignItems: 'center',
-            justifyContent: 'center',
-
+          classes={{
+            root: classes.tabsRoot,
+            indicator: classes.tabsIndicator
           }}>
-      <Tab label="BREAKFAST"/>
-      <Tab label="LUNCH"/>
-      <Tab label="DINNER"/>
+      <Tab label="BREAKFAST" disableRipple classes={{root: classes.tabRoot, selected: classes.tabSelected }}/>
+      <Tab label="LUNCH" disableRipple classes={{root: classes.tabRoot, selected: classes.tabSelected }}/>
+      <Tab label="DINNER" disableRipple classes={{root: classes.tabRoot, selected: classes.tabSelected }}/>
     </Tabs>
   )
 }
@@ -48,7 +69,9 @@ class ListItem extends React.Component {
                             image={item.image}
                             name={item.name}
                             content={item.content}
-                            price={item.price}/>)
+                            price={item.price}
+                            classes={classes}
+                            />)
           })}
         </div>
     )

@@ -59,7 +59,7 @@ export const style = (theme) => {
     desc: {
       boxSizing: 'border-box',
       marginBottom: '3rem'
-    }
+    },
   })
 }
 export default style
