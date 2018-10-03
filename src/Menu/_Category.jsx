@@ -11,7 +11,7 @@ const style = (theme) => {
       width: '80%',
       boxSizing: 'border-box',
       padding: '0px 15px',
-      margin: '3em auto'
+      margin: '3em auto 0 auto'
     },
     tabsRoot: {
       boxSizing: 'border-box',

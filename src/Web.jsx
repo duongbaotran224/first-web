@@ -6,6 +6,7 @@ import BestFoods from './BestFoods/_Main'
 import Restaurant from './Restaurant/_Main'
 import Team from './Team/_Main'
 import Menu from './Menu/_Main'
+import Services from './Services/_Main'
 
 const styles ={
     root: {
@@ -38,6 +39,7 @@ class Web extends React.Component {
                 <Restaurant/>
                 <Team/>
                 <Menu/>
+                <Services/>
             </div>
         )
     }

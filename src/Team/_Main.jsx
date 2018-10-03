@@ -6,7 +6,7 @@ import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid'
 import Chef_1 from '../../src/Images/chef_1.jpg'
 import Chef_2 from '../../src/Images/chef_2.jpg'
-import {Facebook} from './_SVGs.jsx'
+import {Facebook, Instagram, Twitter} from './_SVGs.jsx'
 import {Card, CardContent, Avatar, IconButton} from '@material-ui/core';
 
 const data = [
@@ -42,14 +42,14 @@ const GridList = (props) => {
               <Typography className={classes.desc}>
                 {item.desc}
               </Typography>
-              <IconButton className={classes.button}>
+              <IconButton className={classes.button} href="https://www.facebook.com/">
                 <Facebook className={classes.icon}/>
               </IconButton>
-              <IconButton className={classes.button}>
-                <Facebook className={classes.icon}/>
+              <IconButton className={classes.button} href="https://www.instagram.com/">
+                <Instagram className={classes.icon}/>
               </IconButton>
-              <IconButton className={classes.button}>
-                <Facebook className={classes.icon}/>
+              <IconButton className={classes.button} href="https://www.twitter.com/">
+                <Twitter className={classes.icon}/>
               </IconButton>
             </CardContent>
           </Card>
